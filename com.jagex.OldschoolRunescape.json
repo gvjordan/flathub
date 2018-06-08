@@ -1,0 +1,73 @@
+{
+  "app-id": "com.jagex.OldschoolRunescape",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.6",
+  "sdk": "org.freedesktop.Sdk",
+  "command": "oldschoolrunescape",
+  "sdk-extensions": [
+    "org.freedesktop.Sdk.Extension.openjdk10"
+  ],
+  "finish-args": [
+  ],
+  "build-options" : {
+      "append-path": "/usr/lib/sdk/openjdk10/bin"
+  },
+  "modules": [
+    {
+      "name": "openjdk",
+      "buildsystem": "simple",
+      "build-commands": [
+        "/usr/lib/sdk/openjdk10/install.sh"
+      ]
+    },
+    {
+      "name": "oldschoolrunescape",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p /app/extra",
+        "install -Dp -m 755 oldschoolrunescape /app/bin/oldschoolrunescape",
+        "install -Dp -m 644 com.jagex.OldschoolRunescape.desktop /app/share/applications/com.jagex.OldschoolRunescape.desktop",
+        "install -Dp -m 644 com.jagex.OldschoolRunescape-64.png /app/share/icons/hicolor/64x64/apps/com.jagex.OldschoolRunescape.png",
+        "install -Dp -m 644 com.jagex.OldschoolRunescape-128.png /app/share/icons/hicolor/128x128/apps/com.jagex.OldschoolRunescape.png",
+        "install -Dp -m 644 com.jagex.OldschoolRunescape.png /app/share/icons/hicolor/256x256/apps/com.jagex.OldschoolRunescape.png",
+        "install -Dp -m 644 com.jagex.OldschoolRunescape.appdata.xml /app/share/appdata/com.jagex.OldschoolRunescape.appdata.xml"
+      ],
+      "sources" : [
+        {
+          "type": "extra-data",
+          "filename": "OldschoolRunescape.jar",
+          "url": "xxx",
+          "sha256": "xxx",
+          "size": xxx
+        },
+        {
+          "type": "script",
+          "commands": [
+            "/app/jre/bin/java -jar /app/extra/OldschoolRunescape.jar /app/jre/bin/java"
+          ],
+          "dest-filename": "oldschoolrunescape"
+        },
+        {
+          "type": "file",
+          "path": "com.jagex.OldschoolRunescape.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.jagex.OldschoolRunescape-64.png"
+        },
+        {
+          "type": "file",
+          "path": "com.jagex.OldschoolRunescape-128.png"
+        },
+        {
+          "type": "file",
+          "path": "com.jagex.OldschoolRunescape.png"
+        },
+        {
+          "type": "file",
+          "path": "com.jagex.OldschoolRunescape.appdata.xml"
+        }
+      ]
+    }
+  ]
+}

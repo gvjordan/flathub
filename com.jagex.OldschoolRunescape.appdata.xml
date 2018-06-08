@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.jagex.OldschoolRunescape.desktop</id>
+  <name>Oldschool Runescape</name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <summary>A free-to-play fantasy MMORPG</summary>
+  <description>
+    <p>
+      A previous version of the RuneScape game that was introduced from a backup of the RuneScape source code as it had been on 10 August 2007.
+    </p>
+  </description>
+  <url type="homepage">https://oldschool.runescape.com//</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://i.imgur.com/9TPeMxm.jpg</image>
+    </screenshot>
+  </screenshots>
+  <project_license>LicenseRef-proprietary</project_license>
+  <developer_name>Jagex LTD</developer_name>
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-cartoon">intense</content_attribute>
+    <content_attribute id="violence-fantasy">intense</content_attribute>
+    <content_attribute id="violence-realistic">intense</content_attribute>
+    <content_attribute id="violence-bloodshed">intense</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="drugs-alcohol">moderate</content_attribute>
+    <content_attribute id="drugs-narcotics">moderate</content_attribute>
+    <content_attribute id="drugs-tobacco">mild</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">mild</content_attribute>
+    <content_attribute id="language-profanity">intense</content_attribute>
+    <content_attribute id="language-humor">intense</content_attribute>
+    <content_attribute id="language-discrimination">intense</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+    <content_attribute id="money-gambling">moderate</content_attribute>
+  </content_rating>
+</component>
